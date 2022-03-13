@@ -1,6 +1,6 @@
 /* Name         : Sohan Vishmith D Souza
    Date         : 12/03/2022
-   Description  : The user entered number should identified whether its a odd or a even number. Mention its sign too.
+   Description  : The user entered number should identified whether its a odd or a even number. Mention its sign too Using Nested if-else Concept.
    input        : Integer 'N'. 
    output       : Enter the value of 'n' : -2
                   -2 is negative even number

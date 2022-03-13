@@ -9,7 +9,6 @@
                   2 is positive even number
 
                   Enter the value of 'n' : 0
-                  
                   0 is neither odd nor even
    */
    

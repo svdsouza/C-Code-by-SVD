@@ -1,0 +1,54 @@
+/* Name         : Sohan Vishmith D Souza
+   Date         : 12/03/2022
+   Description  : • In mathematics, the Fibonacci numbers or Fibonacci sequence are the numbers in the following integer sequence 1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89, 144 . . . OR 0, 1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89, 144 . . 
+                  • By definition, the first two numbers in the Fibonacci sequence are 0 and 1, each subsequent number is the sum of the previous two
+   input        : Integer 'N'. 
+   output       : Enter a number: 8
+                  0, 1, 1, 2, 3, 5, 8
+
+                  Enter a number: 10
+                  0, 1, 1, 2, 3, 5, 8
+
+                  Enter a number: 21
+                  0, 1, 1, 2, 3, 5, 8, 13, 21
+
+                  Enter a number: -21
+                  Invalid input
+   */
+   
+#include <stdio.h>
+
+int main() 
+{
+
+int num, nextnum=1, num1=0, sum=0;       // declaration
+printf("Enter a number: ");
+scanf("%d", &num);
+
+
+    if ( num >= 0 )                     //  To check for +ve fibonacci only
+    {
+       printf("%d,%d,", num1, nextnum); 
+        while( sum < num )              // To check sum is greater than num
+          {
+          
+            sum= num1 + nextnum;       // num1 + nextnum for printing next values after 0 1 
+            num1=nextnum;              // store nextnum and num1 in var 
+            nextnum=sum;
+            if ( sum <= num )
+            { 
+                printf("%d,", sum);  // ptint values
+                
+            }
+           
+           }
+           
+    }
+  else                                   // for -ve value entered by user    
+  {
+    printf("Invalid input ");
+    }
+
+    return 0;
+}
+

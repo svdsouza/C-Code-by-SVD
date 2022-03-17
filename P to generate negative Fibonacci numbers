@@ -33,12 +33,12 @@ scanf("%d", &num);    // take value from user
         while( -num > num && sum > num ) // to check for -ve fibonacci 
           {
           
-            sum= num1 - nextnum; // 
-            num1=nextnum;// num1 - nextnum for next values 
+            sum= num1 - nextnum; 
+            num1=nextnum;                    // num1 - nextnum for next values 
             nextnum=sum; 
             if ( sum >= num && sum <= -num) // to prevent 13 from priting when you enter -8
             {   
-                printf(", "); // print space and comma
+                printf(", ");               // print space and comma
                 printf("%d", sum);
                 
                 

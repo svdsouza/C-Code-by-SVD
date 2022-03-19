@@ -21,35 +21,35 @@ int main()
 {
 
 int num, sum=0, i;
-printf("Enter a number: ");
-scanf("%d", &num);
+printf("Enter a number: "); 
+scanf("%d", &num);  // Enter a Number from user
 
 
-    if ( num >= 0 )
+    if ( num >= 0 ) // For positive values only
     {
        
-        for( i = 1 ; i < num ; i++ )
+        for( i = 1 ; i < num ; i++ ) // To evalute Excluding factor
         {
           
-            if( num % i == 0  )
+            if( num % i == 0  ) // To check Entered Number divisors are equal to 0
             {
-                sum = sum + i ;
+                sum = sum + i ; // increment divisors
                
             }
             
         }
-            if ( num == sum )
+            if ( num == sum ) // Evalute if Number is equal to divisors
             {
                 printf("Yes, entered number is perfect number\n");
             }
-            else if  ( num != sum )
+            else if  ( num != sum ) // Evalute if Number is not equal to divisors
             {
                 printf("No, entered number is not a perfect number\n");
             
           
             }
     }
-            else 
+            else // For negative values only
             { 
                 
                 printf("Error : Invalid Input, Enter only positive number\n" );

@@ -1,0 +1,65 @@
+/******************************************************************************
+
+   Name         : Sohan Vishmith D Souza
+   Date         : 20/03/2022
+   Description  : Read a number from user. Let's say if number is 5, you need to print numbers in X pattern as shown below:
+                    If n = 5, then,
+                    1___5
+                    _2_4_
+                    __3__
+                    _2_4_
+                    1___5
+                  Note:- Please consider '_' as space.
+   input        : Read an Integer 'n' from the user
+   output       : Enter the number: 4
+                    1  4
+                     23
+                     23
+                    1  4
+                    
+                    
+                    Enter the number: 5
+                    1   5
+                     2 4
+                      3
+                     2 4
+                    1   5
+                      
+
+*******************************************************************************/
+#include <stdio.h>
+
+
+int main()  
+{
+
+int num, i, j, space;
+
+printf("Read an Integer 'n' from the user:\n"); // Read Value from user
+scanf("%d", &num);
+
+  
+    for( i = 1; i <= num; i++ ) // Nested for loop
+    {
+        
+        for( j = 1 ; j <= num ; j++ )
+        {
+          if( i == j || i + j == num + 1  ) // print disgonal 1234 and diagonal 4321 ( 1 + 4 == 4 + 1 )
+          {
+              printf("%d", j);
+          }
+          else 
+          {
+              printf(" "); // print space
+          }
+           
+        }
+         printf("\n"); // print next line
+        
+        }
+    return 0;
+}
+
+
+
+

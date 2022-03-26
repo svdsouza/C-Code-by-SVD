@@ -1,0 +1,49 @@
+/******************************************************************************
+
+   Name         : Sohan Vishmith D Souza
+   Date         : 12/03/2022
+   Description  : Read a number, M and N from the user. You need to check whether N th bit is set(1) or not, If yes, then you need to clear the M th bit of the number and print the updated value of num
+   input        : Read a number, M and N  
+   output       : Enter the number: 19
+                    
+                    Enter 'N': 1
+                    
+                    Enter 'M': 4
+                    
+                    Updated value of num is 3 
+                   
+                    
+                    Enter the number: 19
+                    
+                    Enter 'N': 2
+                    
+                    Enter 'M': 4
+                    
+                    Updated value of num is 19 
+
+*******************************************************************************/
+#include <stdio.h>
+
+int main()
+{   
+    int num, M, N; // Declaration
+    printf("Enter the number :"); // Take value from user
+    scanf("%d", &num);
+    printf("Enter 'N':");
+    scanf("%d", &N);
+    
+    if( num & 1 << N ) // N is one or not
+   
+    { 
+          printf("Enter 'M':");
+          scanf("%d", &M);
+          num = num &  ~( 1 << M ); // To change any bit
+           
+           
+            
+    } 
+          printf("Updated value of num is %d", num);
+              
+     return 0;
+}
+    
